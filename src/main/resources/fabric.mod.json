@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fishing",
+	"version": "${version}",
+	"name": "Ribalka Or Fishing Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Flomik"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fishing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ribalka.fishing.RibalkaOrFishingMod"
+		],
+		"client": [
+			"ribalka.fishing.RibalkaOrFishingModClient"
+		],
+		"fabric-datagen": [
+			"ribalka.fishing.RibalkaOrFishingModDataGenerator"
+		]
+	},
+	"mixins": [
+		"fishing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

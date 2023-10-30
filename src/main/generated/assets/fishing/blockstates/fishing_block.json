@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fishing:block/fishing_block"
+    }
+  }
+}
